@@ -16,6 +16,15 @@
         }
     </style>
 
+    <style>
+        #exciting-div {
+            background: #f69d3c;
+            border: 1px solid #696969;
+            padding: 10px;
+        }
+    </style>
+
+
 
 </head>
 
@@ -40,6 +49,34 @@
 
     <p style="color: blue;">This is my paragraph.</p>
     <!--Атрибут вбудованого стилю має пріоритет над зовнішнім стилем, тому текст всередині абзацу буде синім.  -->
+
+    <p>Звичайний, нудний абзац. Намагайтеся не заснути.</p>
+    <p id="exciting">The most exciting paragraph on the page. One of a kind!</p>
+
+    <div id="exciting">The most exciting paragraph on the page. One of a kind!</div>
+
+    <!--<style>
+        #exciting {
+            background: #f69d3c;
+            border: 1px solid #696969;
+            padding: 10px;
+        }
+    </style> -->
+    <style>
+        #exciting-paragraph {
+            background: #f69d3c;
+            border: 1px solid #696969;
+            padding: 10px;
+        }
+
+        #exciting-div {
+            background: #f69d3c;
+            border: 1px solid #696969;
+            padding: 10px;
+        }
+    </style>
+    <!--Тепер кожен елемент має унікальний ідентифікатор ("exciting-paragraph" для абзацу та "exciting-div" для div)->
+
 
 
 </body>
