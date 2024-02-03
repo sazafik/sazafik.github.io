@@ -10,6 +10,28 @@
 		Додайте тут елеиент style 
 		В сепедині style визначте селектор p з властивістю color: red;
 	-->
+
+    <!-- Додайте тут елеиент style: -->
+    <style type="text/css">
+        body {
+            background: var(--bgColor);
+        }
+
+        div {
+            --bgColor: limegreen;
+        }
+
+        /*
+    визначте для елементів p властивість фону таким чином:
+    background: var(--bgColor);
+    */
+
+        div,
+        p {
+            background: var(--bgColor);
+        }
+    </style>
+
     <style>
         p {
             color: red;
@@ -75,9 +97,20 @@
             padding: 10px;
         }
     </style>
-    <!--Тепер кожен елемент має унікальний ідентифікатор ("exciting-paragraph" для абзацу та "exciting-div" для div)->
+    <!--Тепер кожен елемент має унікальний ідентифікатор ("exciting-paragraph" для абзацу та "exciting-div" для div)-->
 
 
+    <!-- Додайте тут 2 елеиенти div: -->
+    <div>
+        <h3>Div 1</h3>
+        <p>Paragraph 1</p>
+    </div>
+
+    <div>
+        <h3>Div 2</h3>
+        <p>Paragraph 2</p>
+    </div>
+    <!--Чи буде змінна --bgColor видимою для елемента body.(ТАК) Яким буде фон елемента body і чому.(limegreen) Тому що bgColor визначена глобально в селекторі, що роить її доступною як для елементів body так і для dic -->
 
 </body>
 
