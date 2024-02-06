@@ -26,6 +26,21 @@
         <p class="heading">This is a heading.</p>
     </footer>
     <p class="heading">This is a heading.</p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+
+    <section>
+        <p>This is a paragraph.</p>
+        <div>
+            <p>This is another paragraph.</p>
+            <!--
+               Чи зміниться колір тексту p всередині елемента div?
+                Ні, колір тексту <p> всередині елемента <div> не зміниться через правило section > p { color: red; }, оскільки воно застосовується тільки до елементів <p>, які є прямими дочірніми елементами <section>.
+            -->
+        </div>
+    </section>
 </body>
 
 </html>

@@ -15,3 +15,14 @@ h3 {
 .heading {
     color: green;
 }
+
+ul>li {
+    font-weight: bold;
+}
+
+section>p {
+    color: red;
+}
+
+section * {
+    font-size: 16px;
