@@ -26,3 +26,20 @@ section>p {
 
 section * {
     font-size: 16px;
+}
+
+h2:first-of-type {
+    color: indigo;
+}
+
+p.first a {
+    color: green;
+}
+
+.first a {
+    color: green;
+}
+
+div+p {
+    color: salmon;
+}
