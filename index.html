@@ -4,17 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <style>
-        @import url('css/common.css');
-    </style>
-
     <title>Моя домашня сторінка</title>
     <!-- Додав іконку для сайту -->
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- додайте тут Google Fonts «Roboto» -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    </style>
+
+    <link href="css/main.css" rel="stylesheet">
+
 </head>
 
 <body>
+
+    <header>
+        <nav>
+            <!-- navigation -->
+            <a href="index.html">Home</a>
+            <a href="catalog.html">Catalog</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <!--створіть тут підрозділ nav з таким вмістом
+
+        <a href="#"></a>
+        <a href="cart.html"></a>
+        <a href="#!"></a>
+        -->
+        <nav>
+            <!-- Links with Font Awesome icons -->
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="cart.html" class="fas fa-heart"></a>
+            <a href="#!" class="fas fa-user"></a>
+        </nav>
+    </header>
+
+
+
 
     <!--
 Виправити помилку у фпагменті
@@ -125,8 +154,22 @@
             </ul>
             <p>&copy; 2024 Copyright Shopaholic Inc.</p>
         </section>
+
+        <section class="footer-social">
+            <!-- Content for footer-social section -->
+            <ul class="list-unstyled">
+                <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://twitter.com"><i class="fab fa-twitter"></i>Twitter</a></li>
+                <li><a href="https://github.com"><i class="fab fa-github"></i>GitHub</a></li>
+                <li><a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+                <li><a href="https://www.youtube.com"><i class="fab fa-youtube"></i>YouTube</a></li>
+                <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i>Instagram</a></li>
+            </ul>
+        </section>
+
     </footer>
 
+    <script src="https://kit.fontawesome.com/fbbf2e46d2.js" crossorigin="anonymous"></script>
 
 </body>
 
