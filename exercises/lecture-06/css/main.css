@@ -1,0 +1,104 @@
+a {
+    color: indigo;
+    /* колір тега a */
+
+}
+
+
+a:visited {
+    color: gold;
+    /* колір тега a, якщо вже відвідали */
+}
+
+a:hover {
+    color: salmon;
+    /* колір тега a, якщо вказівник користувача знаходиться над ним */
+}
+
+a:active {
+    color: red;
+    /* колір тега a, який є активованим */
+}
+
+a:focus {
+    color: orange;
+    /* колір тега a, який отримав фокус */
+}
+
+
+
+input[type="number"]:valid {
+    background-color: rgba(0, 255, 0, 0.25);
+    /* зелений фон з прозорістю 0.25, якщо значення дійсне */
+}
+
+input[type="number"]:invalid {
+    background-color: rgba(255, 0, 0, 0.25);
+    /* червоний фон з прозорістю 0.25, якщо значення недійсне */
+}
+
+ul li:first-child {
+    color: orange;
+}
+
+/* Перший елемент <span> в першому <li> */
+ul li:first-child>span:first-child {
+    color: orange;
+}
+
+/* Останній елемент <span> всередині останнього <li> */
+ul li:last-child>span:last-child {
+    color: orange;
+}
+
+/*  Встановлення помаранчевого коліру для елементів li, які не мають класу first-item */
+ul li:not(.first-item) {
+    color: orange;
+}
+
+/*  Встановлення чорного тексту та жовтого фону для всіх елементів li, крім першого елемента з класом first-item та останнього елемента li у списку */
+ul li {
+    color: black;
+    background-color: yellow;
+}
+
+/* Виняток для першого елемента з класом first-item */
+ul li.first-item {
+    color: black;
+    background-color: yellow;
+}
+
+/* Виняток для останнього елемента li у списку */
+ul li:last-child {
+    color: black;
+    background-color: yellow;
+}
+
+/* Встановлення другому елементу <li> помаранчевий колір: */
+
+ol li:nth-child(2) {
+    color: orange;
+}
+
+/* Встановлення кожному парному елементу <li> помаранчевий колір: */
+
+ol li:nth-child(even) {
+    color: orange;
+}
+
+/* Встановіть кожному елементу li помаранчевий колір за фрпмулою 2n+6 */
+
+ol li:nth-child(2n+6) {
+    color: orange;
+}
+
+/* Вставдення за допомогою псевдоелемента before перед Україні слово Слава*/
+
+.ua::before {
+    content: "Слава ";
+}
+
+/* Вставка за допомогою псевдоелемента before симввол параграфу */
+.cont::before {
+    content: "\00A7";
+}
