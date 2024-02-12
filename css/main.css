@@ -1,9 +1,6 @@
-:root {
-    --primary-text-color: #000;
-    --primary-bg-color: #fff;
-    --primary-font-family: 'Roboto', sans-serif;
-    --primary-font-size: 0.875rem;
-}
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+
 
 
 
