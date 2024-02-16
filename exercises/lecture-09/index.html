@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lecture #9 Управління потоком</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        img {
+            width: 250px;
+            float: right;
+            /* Додаємо правий float */
+            margin-left: 17px;
+            margin-bottom: 10px;
+        }
+
+        .static-position {
+            position: static;
+            /* Застосовуємо статичне позиціонування */
+            background: yellow;
+            /* Задаємо жовтий фон */
+        }
+
+        .relative-position {
+            position: relative;
+            /* Застосовуємо відносне позиціонування */
+            background: red;
+            /* Задаємо червоний фон */
+            top: -130px;
+            /* Зміщуємо зверху на 130px */
+            left: -130px;
+            /* Зміщуємо зліва на 130px */
+        }
+
+        .absolute-position {
+            position: absolute;
+            /* Застосовуємо абсолютне позиціонування */
+            background: blueviolet;
+            /* Задаємо фон */
+            top: 30px;
+            /* Зміщуємо зверху на 30px */
+            left: 30px;
+            /* Зміщуємо зліва на 30px */
+        }
+
+        p:nth-of-type(1) {
+            /* position: absolute;*/
+            position: relative;
+            /* Додаємо позиціонування */
+            z-index: 1;
+            /* Задаємо z-index */
+            background: lime;
+            top: 10px;
+            right: 30px;
+        }
+
+        h1 {
+            position: fixed;
+            /* Зафіксовуємо позицію */
+            top: 0;
+            /* Розташовуємо в верхній частині */
+            left: 0;
+            /* Розташовуємо в лівому куті */
+            background: white;
+            /* Задаємо білий фон */
+            width: 100%;
+            /* Ширина на всю ширину вікна */
+            padding: 10px;
+            /* Додаємо відступи */
+            box-sizing: border-box;
+            /* Включаємо відступи у ширину та висоту */
+            margin: 0;
+            /* Відміняємо зовнішні відступи */
+            z-index: 9999;
+            /* Задаємо високий z-index, щоб елемент був над усіма іншими */
+        }
+    </style>
+
+    <style>
+        /* dt {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin: 1em 0;
+        }*/
+
+        dt {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin: 1em 0;
+            position: sticky;
+            /* Додаємо sticky позиціонування */
+            top: 0;
+            /* Фіксуємо вгорі сторінки */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Управління потоком</h1>
+
+    <p>
+        Examples of the CSS float Property
+        Below are some examples of how the CSS float property works.
+        <img src="./img/example.jpg">
+    </p>
+
+    <p>Статичне позиціонування є типовим для кожного елемента. Це просто означає, помістіть елемент у звичайне положення
+        в документі.</p>
+    <p class="static-position">Статичне позиціонування є типовим для кожного елемента. Це просто означає, помістіть
+        елемент у звичайне положення в документі.</p>
+
+    <p class="relative-position">
+        Відносне позиціювання. Положення елемента встановлюється відносно його поточного положення. Додавання
+        властивостей left, top, right і bottom змінює позицію елемента і зрушує його в ту чи іншу сторону. Ця
+        властивість дозволяє змінювати позицію елемента без зміни макету.
+    </p>
+
+    <h2>Sticky positioning</h2>
+
+    <dl>
+        <dt>A</dt>
+        <dd>Apple</dd>
+        <dd>Ant</dd>
+        <dd>Altimeter</dd>
+        <dd>Airplane</dd>
+        <dt>B</dt>
+        <dd>Bird</dd>
+        <dd>Buzzard</dd>
+        <dd>Bee</dd>
+        <dd>Banana</dd>
+        <dd>Beanstalk</dd>
+        <dt>C</dt>
+        <dd>Calculator</dd>
+        <dd>Cane</dd>
+        <dd>Camera</dd>
+        <dd>Camel</dd>
+        <dt>D</dt>
+        <dd>Duck</dd>
+        <dd>Dime</dd>
+        <dd>Dipstick</dd>
+        <dd>Drone</dd>
+        <dt>E</dt>
+        <dd>Egg</dd>
+        <dd>Elephant</dd>
+        <dd>Egret</dd>
+    </dl>
+
+</body>
+
+</html>
