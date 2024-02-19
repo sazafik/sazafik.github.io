@@ -1,0 +1,29 @@
+:root {
+    --min: 30px;
+    /* Adjust the value as needed */
+}
+
+body {
+    --padding: 5vw;
+    --max-width: 180ch;
+}
+
+.flexbox {
+    --min: 30ch;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.card {
+    flex: 1;
+    /* Let each card grow to fill the available space */
+    min-width: var(--min);
+    /* Set the minimum width based on the variable --min */
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}

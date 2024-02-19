@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <style>
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            width: 700px;
+            justify-content: space-between;
+            /* Distribute space evenly between items */
+        }
+
+        .item-blue {
+            background-color: blue;
+            flex-grow: 3;
+            /* Set growth factor to 3 */
+        }
+
+        .item-orange {
+            background-color: orange;
+            flex-grow: 1;
+            /* Allow item to grow */
+        }
+
+        .item-green {
+            background-color: green;
+            flex-grow: 1;
+            /* Set growth factor to 1 */
+        }
+
+        .item-blue {
+            background-color: blue;
+            flex-grow: 3;
+        }
+
+        .item-orange {
+            background-color: orange;
+        }
+
+        .item-green {
+            background-color: green;
+            flex-grow: 1;
+        }
+
+        .item {
+            color: white;
+            /* width: 100px;*/
+            flex: 1;
+            /* Each item will have equal width */
+        }
+
+        /*                          Total width of container: 700px
+
+            Width of item-blue = (100px + (3 * growth_factor)) = 100px + (3 * 100px) = 400px
+            Width of item-green = (100px + (1 * growth_factor)) = 100px + (1 * 100px) = 200px
+            Width of item-orange = 100px (no flex-grow specified)
+         */
+    </style>
+
+
+
+</head>
+
+<body>
+    <h2>CSS Flex Property</h2>
+    <div class="wrapper">
+        <div class="item item-blue">CSS</div>
+        <div class="item item-orange">Flex</div>
+        <div class="item item-green">Property</div>
+    </div>
+</body>
+
+</html>
