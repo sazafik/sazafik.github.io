@@ -19,19 +19,33 @@
     <style>
         .first-box {
             width: 200px;
+            /* ширина контенту */
             height: 100px;
+            /* висота контенту */
             border: 8px solid blue;
+            /* ширина рамки */
             padding: 20px;
+            /* внутрішні відступи */
             background: yellow;
+            /* колір фону */
+            /* Total width: 200px + (2 * 20px) + (2 * 8px) = 256px
+                Total height: 100px + (2 * 20px) + (2 * 8px) = 156px */
         }
     </style>
     <style>
         .second-box {
             width: 200px;
+            /* Ширина контенту */
             height: 100px;
+            /* Висота контенту */
             border: 8px solid blue;
+            /* Ширина рамки */
             background: yellow;
+            /* Колір фону */
         }
+
+        /* Ширина: 200px + 2 * 8px (ліва та права рамка) = 216px
+        Висота: 100px + 2 * 8px (верхня та нижня рамка) = 116px */
     </style>
     <style>
         div {
@@ -40,6 +54,8 @@
             border: 8px solid blue;
             padding: 20px;
             background: yellow;
+            /* Ширина: 200px (контент) + 2 * 20px (ліва та права padding) + 2 * 8px (ліва та права border) = 256px */
+
         }
     </style>
     <style>
@@ -49,6 +65,8 @@
             border: 8px solid blue;
             padding: 20px;
             background: yellow;
+            /* Ширина контенту: 200px (вказана ширина) - 2 * 20px (ліва та права padding) - 2 * 8px (ліва та права border) = 144px */
+
         }
     </style>
 
@@ -84,10 +102,8 @@
         }
 
         h1 span {
+            width: min-content;
             display: inline-block;
-            /* Розбиваємо на два рядки */
-            word-wrap: break-word;
-            /* Дозволяємо перенесення слів */
         }
     </style>
 </head>
