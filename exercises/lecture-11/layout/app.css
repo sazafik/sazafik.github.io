@@ -1,0 +1,29 @@
+.grid-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+}
+
+.header {
+    grid-column: 1 / span 3;
+    background-color: #3498db;
+
+}
+
+.sidebar {
+    grid-column: 1;
+    background-color: #2ecc71;
+
+}
+
+.main {
+    grid-column: 2 / span 2;
+    background-color: #e74c3c;
+
+}
+
+.footer {
+    grid-column: 1 / span 3;
+    background-color: #f39c12;
+}
