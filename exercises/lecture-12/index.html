@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic font-size</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        /* Медіа-запит для фіксації font-size при перевищенні 1920px 
+        @media screen and (min-width: 1920px) {
+            body {
+                 font-size: 48px;
+                    }
+                }*/
+
+
+
+        /* Визначення font-size для різних розмірів вікна перегляду */
+        @media screen and (min-width: 768px) {
+            body {
+                font-size: 20px;
+            }
+        }
+
+
+        body {
+            color: #000;
+            background: #fff;
+            font-family: Arial, sans-serif;
+            padding: 1em;
+            /* font-size: clamp(16px, calc(2.63158vw + 10.5263px), 48px);
+                Використання clamp() та calc() для розрахунку font-size */
+
+            /* font-size: clamp(16px, calc(0.78125vw + 10px), 36px);
+                 Використання clamp() та calc() для розрахунку font-size */
+
+            /* font-size: clamp(16px, calc(1vw + 2px), 36px);
+                Використання clamp() та calc() для розрахунку font-size */
+
+            /*font-size: clamp(16px, calc(4.16667vw - 4px), 48px);
+                /* Використання clamp() та calc() для розрахунку font-size */
+
+            font-size: clamp(16px, calc(0.833vw + 12px), 48px);
+            /* Використання clamp() та calc() для розрахунку font-size */
+
+
+
+        }
+    </style>
+
+
+</head>
+
+<body translate="no">
+    <p>
+        This text has a font size of 20px at viewport width of 768px and font size of 36px when viewport width is
+        1920px. But if the viewport width is less than 768px, the font-size won't get lower than 16px and if the
+        viewport width is more than 1920px font size will stop scaling at 48px.
+    </p>
+
+</body>
+
+</html>
