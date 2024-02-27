@@ -84,13 +84,13 @@
 
 
 
-        /*створити grid-контейнер з трьох рядків висотою 90px 300px 1fr і чотирьох стовпців однакової ширини
+        /*створити grid-контейнер з трьох рядків висотою 90px 300px 1fr і чотирьох стовпців однакової ширини*/
         main {
             display: grid;
             grid-template-rows: 90px 300px 1fr;
-            grid-template-columns: repeat(4, 1fr);
-            
-        }*/
+            grid-template-columns: auto auto auto auto;
+
+        }
 
         /*створити grid-контейнер з чотирьох стовпців однакової ширини та розмістити стовпці в центрі контейнера
         main {
@@ -140,17 +140,17 @@
         }*/
 
         /*створити grid-контейнер з чотирьох стовпців однакової ширини, що дорівнює 50px*/
-        main {
+        /*main {
             display: grid;
             grid-template-columns: repeat(4, 50px);
 
-        }
+        }*/
 
         /*призначте рівномірні відстані до обох кінців grid-контейнера та між стовпцями
         main {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            justify-content: space-between;
+            justify-content: space-evenly;
+            grid-template-columns: repeat(4, 50px);
             
         }*/
 
