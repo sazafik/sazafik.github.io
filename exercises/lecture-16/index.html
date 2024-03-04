@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <h1>Hello, javascript!</h1>
+
+    <script>
+        'use strict';
+
+        var message1 = "Hello";
+        var message2 = "JavaScript";
+        var message = message1 + " " + message2 + "!";
+        alert(message);
+
+        var message = 'hello';
+        message = 123456;
+
+        console.log(message); 
+/**
+
+ // Запитуємо у користувача значення змінних x та y
+ var x = prompt("Введіть значення для змінної x:");
+        var y = prompt("Введіть значення для змінної y:");
+
+        // Перетворюємо отримані значення в числа, оскільки prompt повертає рядок
+        x = parseFloat(x);
+        y = parseFloat(y);
+
+        // Виводимо суму x та y
+        var sum = x + y;
+        alert("Сума змінних x та y дорівнює: " + sum);
+
+*/
+
+/**
+
+        let a = 9007199254740991n; // суфікс 'n' для позначення BigInt
+        let b = 9007199254740991n;
+        console.log(a + b); 
+
+        */
+
+        let apples = "2";
+        let oranges = "3";
+
+        // Перетворюємо рядки у числа та додаємо їх
+        let result = Number(apples) + Number(oranges);
+
+        alert(result);
+
+
+   /**
+
+        let a = 1, b = 1;
+        let c = ++a; // a має значення 2, оскільки ++a збільшує значення a на одиницю перед тим, як використовувати його у виразі присвоєння.
+        let d = b++; // b також має значення 2, оскільки b++ збільшує значення b на одиницю після того, як використовувалося його виразом присвоєння.
+    */
+      
+
+        let a = 2;
+        let x = 1 + (a *= 2);
+        console.log(x); 
+
+
+    </script>
+
+</body>
+</html>
