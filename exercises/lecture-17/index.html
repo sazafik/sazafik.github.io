@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	
+</head>
+<body>
+   
+  <script>
+
+  let x = 3
+  let y = 4
+
+  x == 3
+  x === "3"
+  x!=5
+  x!== "5"
+  //X!== 3
+  y > 5
+  y >= 3
+  y < 5
+  y <= 2
+  1 == true
+  null == undefined
+  NaN == NaN
+
+
+/*
+let x = 3;
+let y = 4;
+let z = 5;
+
+x ||= y; //x = 3
+x || (y = z); true
+x &&= y; // x останется 3, и y не изменится.
+x && (y = z); //5
+x ??= y;//3
+x ?? (y = z); // x=3 y =4
+
+
+*/
+/*
+function checkNumber(num) {
+    if (num === 3) {
+        console.log("Поздравляем, вы сделали это!");
+    } else if (num > 3) {
+        console.log("Число слишком длинное");
+    } else {
+        console.log("Число слишком короткое");
+    }
+}
+
+let userInput = parseFloat(prompt("Пожалуйста, введите число:"));
+
+checkNumber(userInput);
+*/
+/*
+function checkDayOfWeek(day) {
+    if (day.toLowerCase() === "понедельник") {
+        console.log("Начало рабочей недели!");
+    } else if (day.toLowerCase() === "пятница") {
+        console.log("Конец рабочей недели!");
+    } else {
+        console.log("Обычный день");
+    }
+}
+
+let userInput = prompt("Пожалуйста, введите название дня:");
+
+checkDayOfWeek(userInput);
+*/
+
+/*
+function checkDayOfWeek(day) {
+    if (day.toLowerCase() === "понедельник" || day.toLowerCase() === "вторник" || day.toLowerCase() === "среда" || day.toLowerCase() === "четверг") {
+        console.log("Начало рабочей недели!");
+    } else if (day.toLowerCase() === "пятница") {
+        console.log("Конец рабочей недели!");
+    } else {
+        console.log("Обычный день");
+    }
+}
+
+let userInput = prompt("Пожалуйста, введите название дня:");
+
+checkDayOfWeek(userInput);
+*/
+
+/*
+function checkDayOfWeek(day) {
+    switch (day.toLowerCase()) {
+        case "понедельник":
+        case "вторник":
+        case "среда":
+        case "четверг":
+            console.log("Начало рабочей недели!");
+            break;
+        case "пятница":
+            console.log("Конец рабочей недели!");
+            break;
+        default:
+            console.log("Обычный день");
+    }
+}
+
+let userInput = prompt("Пожалуйста, введите название дня:");
+
+checkDayOfWeek(userInput);
+*/
+/*
+function assignGrade(score) {
+    if (score < 50) {
+        return 'F';
+    } else if (score < 70) {
+        return 'D';
+    } else if (score < 80) {
+        return 'C';
+    } else if (score < 90) {
+        return 'B';
+    } else {
+        return 'A';
+    }
+}
+
+let studentScore = parseFloat(prompt("Пожалуйста, введите количество баллов:"));
+
+let grade = assignGrade(studentScore);
+console.log("Студенту присвоена ступень:", grade);
+
+*/
+
+/*
+function assignGrade(score) {
+    return score < 50 ? 'F' :
+           score < 70 ? 'D' :
+           score < 80 ? 'C' :
+           score < 90 ? 'B' :
+           'A';
+}
+
+let studentScore = parseFloat(prompt("Пожалуйста, введите количество баллов:"));
+
+let grade = assignGrade(studentScore);
+console.log("Студенту присвоена ступень:", grade);
+
+*/
+
+let firstName = prompt("Введите ваше имя:");
+let lastName = prompt("Введите вашу фамилию:");
+let username = (firstName || lastName) ?? "Guest";
+
+console.log(username);
+
+
+
+  </script>
+
+</body>
+</html>
